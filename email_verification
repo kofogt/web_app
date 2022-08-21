@@ -1,0 +1,7 @@
+def email_validation(email):
+    email= email.strip().lower()
+    if re.search(r"^.+@.+.\.com$", email):
+        return print("Valid")
+    return print("Invaild")
+
+email_validation("Kofogt@gmail.com")
